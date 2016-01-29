@@ -29,7 +29,7 @@ angular.module('goSafeApp')
                     return heatLayer;
                 }
 
-                SetPolygonsFactory.getPolygons(function(polygonsArray){
+                //SetPolygonsFactory.getPolygons(function(polygonsArray){
                     $scope.map = {
                         center: {
                             latitude: $scope.coords.lat,
@@ -99,7 +99,7 @@ angular.module('goSafeApp')
                             }
                         }
                     ];*/
-                });
+                //});
             });
         });
     });
