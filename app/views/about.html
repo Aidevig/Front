@@ -1,0 +1,7 @@
+<ui-gmap-google-map center ='map.center' zoom='map.zoom' options='map.options' bounds='map.bounds'>
+    <ui-gmap-markers models="markers" coords="'self'" icon="'icon'"></ui-gmap-markers>
+    <ui-gmap-polygon static="true" ng-repeat="p in polygons track by p.id" path="p.path" stroke="p.stroke"
+        visible="true" geodesic="true" fill="p.fill" fit="true">
+    </ui-gmap-polygon>
+    <ui-gmap-layer namespace="visualization" type="HeatmapLayer" show="map.showHeat" onCreated="map.heatLayerCallback"></ui-gmap-layer>
+</ui-gmap-google-map>
